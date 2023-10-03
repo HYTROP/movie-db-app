@@ -22,7 +22,7 @@ export default class Card extends Component {
         voteValue: newRating,
       });
     } catch (err) {
-      throw new Error("Error updating rating", err);
+      console.error(err);
     }
   };
 
@@ -63,7 +63,7 @@ export default class Card extends Component {
 
     function shortenDescription(overview, maxLength = 120) {
       if (window.matchMedia("(max-width: 768px)").matches) {
-        maxLength = 180;
+        maxLength = 140;
       }
       if (overview.length <= maxLength) {
         return overview;

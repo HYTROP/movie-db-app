@@ -18,6 +18,7 @@ function Genre({ genreIds }) {
                 </span>
               );
             }
+
             return null;
           })
           .slice(0, 4);

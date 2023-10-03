@@ -54,8 +54,6 @@ export class MovieService {
       headers: {
         accept: "application/json",
         "Content-Type": "application/json;charset=utf-8",
-        // Authorization:
-        //   "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2ZGNlMmE3OTY1NWNmOTMwNGExM2Q1NjMzZGVhZDVhYiIsInN1YiI6IjY1MGY0MDIyZjI5ZDY2MDBlMjU3YmUxOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.IkW5ktgyV3w83buHB3x70opF0pEcOjKYR_yvdav6OqQ",
       },
       body: `{"value": ${voteRating}}`,
     };
@@ -64,7 +62,6 @@ export class MovieService {
       `${this._apiBase}/movie/${movieId}/rating?guest_session_id=${guestSessionId}&api_key=${this._apiKey}`,
       option
     );
-    console.log(res);
 
     if (!res.ok) {
       throw new Error(`Fetch add vote dont work ${res.status}`);
@@ -72,12 +69,9 @@ export class MovieService {
   }
 
   async getRatedMovies(guestSessionId, pageNumber) {
-    // console.log(pageNumber);
-
     const res = await fetch(
       `${this._apiBase}guest_session/${guestSessionId}/rated/movies?page=${pageNumber}&api_key=${this._apiKey}&language=en-US&sort_by=created_at.asc`
     );
-    console.log(guestSessionId);
 
     if (!res.ok) {
       throw new Error(`Fetch error ${res.status}`);
