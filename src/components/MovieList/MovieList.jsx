@@ -6,12 +6,6 @@ import "../App/App.css";
 function MovieList(props) {
   const { moviesData, guestSessionId } = props;
 
-  // console.log(ratedMovies); // undefined
-
-  // // const moviesToDisplay = activeTab === "Search" ? moviesData : ratedMovies;
-
-  // // console.log(guestSessionId); // !!!!!!!
-
   const movieElements = moviesData.map((item) => (
     <Card
       key={item.id}
@@ -24,7 +18,6 @@ function MovieList(props) {
       genreIds={item.genre_ids}
       guestSessionId={guestSessionId}
       rating={item.rating}
-      // movieRating={movieRating}
     />
   ));
 

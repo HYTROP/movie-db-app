@@ -61,17 +61,15 @@ div .genre {
   margin: 10px;
   display: flex;
   flex-wrap: wrap;
-  /* box-sizing: border-box; */
 }
 
 .card-description {
   width: 228px;
-  height: 100px;
+  height: 110px;
 }
 
 .vote {
   position: relative;
-  /* top: 10px; */
   left: 20px;
   font-size: 16px;
   border-radius: 50%;
@@ -90,32 +88,70 @@ div .genre {
 @media (max-width: 768px) {
   .card-box {
     padding: 20px 15px;
-    margin: 0 10px;
+    margin: 0 15px;
     width: 420px;
+  }
+
+  h1.title {
+    margin: 0 0;
+    width: 250px;
+
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .data-of-release {
+    width: 250px;
+    height: 30px;
+    color: rgb(191, 194, 194);
+  }
+
+  .genre-tags {
+    width: 240px;
   }
 
   li,
   .card {
     display: flex;
+    margin: 0 0 30px 0;
     width: 388px;
     height: 245px;
   }
 
-  .card {
-    box-sizing: border-box;
-    margin: 0 0;
+  .img-film {
+    width: 62px;
+    height: 90px;
+    margin: 6px 0 10px 10px;
   }
 
   .card-text {
-    margin: 0 10px;
+    position: absolute;
+    left: 100px;
+    width: 300px;
+    margin: 10px;
+    display: flex;
   }
 
   .card-description {
     position: relative;
-    right: 60px;
-    margin: 10px;
+    right: 70px;
     width: 350px;
-    height: 82px;
-    font-size: 15px;
+    height: 92px;
+    font-size: 14px;
+  }
+
+  .vote {
+    position: relative;
+    left: 10px;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 41px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 }

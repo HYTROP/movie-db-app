@@ -233,8 +233,8 @@ export default class App extends Component {
         key: "Rated",
         label: "Rated",
         children: (
-          <div className="tab-content" key="tab2">
-            <MovieList moviesData={this.state.ratedMovies} />,
+          <div className="tab-content-rate" key="tab2">
+            <MovieList moviesData={this.state.ratedMovies} />
           </div>
         ),
       },

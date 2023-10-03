@@ -61,7 +61,31 @@ export default class Card extends Component {
       return null;
     }
 
-    function shortenDescription(overview, maxLength = 115) {
+    function shortenDescription(overview, maxLength = 120) {
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        maxLength = 180;
+      }
+      if (overview.length <= maxLength) {
+        return overview;
+      }
+      const words = overview.split(" ");
+      let shortened = "";
+
+      for (let i = 0; i < words.length; i++) {
+        if ((shortened + words[i]).length <= maxLength) {
+          shortened += words[i] + " ";
+        } else {
+          break;
+        }
+      }
+
+      return shortened.trim() + "...";
+    }
+
+    function shortenTitle(overview, maxLength = 35) {
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        maxLength = 40;
+      }
       if (overview.length <= maxLength) {
         return overview;
       }
@@ -90,7 +114,7 @@ export default class Card extends Component {
           </div>
 
           <div className="card-text">
-            <h1 className="title">{shortenDescription(title)}</h1>
+            <h1 className="title">{shortenTitle(title)}</h1>
             <div className="vote" style={borderStyle}>
               <span className="vote-number">{voteAverageRound}</span>
             </div>
@@ -101,7 +125,7 @@ export default class Card extends Component {
             <Genre className="film-tag" genreIds={genreIds} />
 
             <div className="card-description">
-              <span>{shortenDescription(overview)}</span>
+              {shortenDescription(overview)}
             </div>
             <Rate
               className="rated-stars"

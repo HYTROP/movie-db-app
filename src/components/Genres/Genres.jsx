@@ -10,6 +10,7 @@ function Genre({ genreIds }) {
         const genreSpans = genreIds
           .map((id) => {
             const genre = genres.find((genreList) => genreList.id === id);
+
             if (genre) {
               return (
                 <span key={genre.id} className="genre-span">
