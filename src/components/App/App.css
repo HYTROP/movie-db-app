@@ -37,7 +37,7 @@ img {
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
 
 body {
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 14px 'Inter', sans-serif;
   line-height: 1.4em;
   background: white;
   color: #111111;
@@ -117,27 +117,24 @@ span {
 
 @media (max-width: 768px) {
 
+  h1,
   .title {
+    margin: 0 0 10px 0;
     height: min-content;
 
   }
 
   .search-block {
+    width: 100vw;
     padding: 20px 30px;
-    /* margin: 0 10px; */
-    width: 430px;
-  }
-
-  .data-of-release {
-    width: max-content;
-    height: max-content;
+    margin: 0;
   }
 
   .search-input {
+    width: 100%;
     margin: 0 0;
     border-color: solid #e1e1e1;
   }
-
 
   .rate-wrap {
     width: max-content;
@@ -148,14 +145,21 @@ span {
     height: 100vh;
   }
 
-  /* .ant-tabs-tabpane {
+  .not-found {
     margin: 0 auto;
-    width: 420px;
-  } */
+    padding: 0 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+  }
+
+  .tab-content {
+    width: 100%;
+    margin: 0 auto;
+  }
 
   .ant-tabs-nav {
     margin: 0 auto;
-    width: 420px;
+    width: 100%;
   }
 
   .ant-tabs,
@@ -181,21 +185,16 @@ span {
     font-family: 'Inter', sans-serif;
   }
 
-  /* .ant-tabs-tabpane,
-  .ant-tabs-tabpane-active,
-  .tab-content-rate {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 0 0 9px;
+  .spinner {
+    margin: 0 0;
+    padding: 0 0;
+  }
+
+  /* .ant-spin,
+  .ant-spin-spinning {
+    width: 20px;
+
   } */
-
-  .card-box {
-    margin: 0;
-  }
-
-  .ant-spin {
-    margin: 0 auto;
-  }
 
 
 }
