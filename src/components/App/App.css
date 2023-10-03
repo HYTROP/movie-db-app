@@ -1,0 +1,232 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+
+body {
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  background: white;
+  color: #111111;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 300;
+}
+
+main {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  margin: 0 auto;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+}
+
+.offline-message {
+  margin: auto 140px;
+}
+
+.isOffline {
+  width: max-content;
+  box-shadow: 3px 4px 8px bisque;
+  background-color: bisque;
+  display: block;
+}
+
+
+.search-block {
+  margin: 0 auto;
+}
+
+.search-input {
+  outline: none;
+  width: 938px;
+  height: 40px;
+  margin: 30px 0 30px 0;
+  font-family: 'Inter', sans-serif;
+  font-size: large;
+}
+
+
+.search-panel {
+  margin: 50px auto;
+  height: max-content;
+  color: #111111;
+  max-width: 800px;
+  display: flex;
+}
+
+.search-panel,
+span {
+  margin: 0 auto;
+}
+
+.search-start-message {
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  font-size: large;
+}
+
+.not-found {
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  font-size: large;
+}
+
+.error-page {
+  margin: 20px 0;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+
+  .title {
+    height: min-content;
+
+  }
+
+  .search-block {
+    padding: 20px 30px;
+    margin: 0 10px;
+    width: 430px;
+  }
+
+  .data-of-release {
+    width: max-content;
+    height: max-content;
+  }
+
+  .search-input {
+    margin: 0 0;
+    border-color: solid #e1e1e1;
+  }
+
+
+  .rate-wrap {
+    width: max-content;
+  }
+
+  header {
+    width: 435px;
+    height: 100vh;
+  }
+
+  .ant-tabs-tabpane {
+    margin: 0 auto;
+    width: 420px;
+  }
+
+  .ant-tabs-nav {
+    margin: 0 auto;
+    width: 420px;
+  }
+
+  .ant-tabs,
+  .ant-tabs-top {
+    width: 400px;
+    margin: 0 0;
+  }
+}
+
+.paggy,
+.pagination-container,
+.ant-pagination {
+  margin: 20px auto;
+  height: 80px;
+}
+
+.ant-select,
+.ant-pagination-options-size-changer {
+  display: none;
+}
+
+.ant-tabs,
+.ant-tabs-top {
+  width: 100vw;
+  height: 40px;
+  margin: 0 0;
+}
+
+.ant-tabs-nav-wrap {
+  margin: 0 30%;
+  width: 2600px;
+}
+
+.ant-tabs-nav::before {
+  display: none;
+  content: none;
+}
+
+.ant-tabs-nav-wrap::before {
+  display: none;
+  content: none;
+}
+
+.ant-tabs-nav-wrap::after {
+  display: none;
+  content: none;
+}
+
+.ant-tabs-content-holder {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+}
+
+.rate-wrap {
+  height: 10px;
+
+}
+
+.ant-rate-star,
+.ant-rate-star-zero {
+  display: flex;
+  position: absolute;
+  width: 12px;
+  height: min-content;
+}
+
+
+.ant-tabs-tabpane,
+.ant-tabs-tabpane-active,
+.tab-content {
+  display: flex;
+  flex-wrap: wrap;
+}

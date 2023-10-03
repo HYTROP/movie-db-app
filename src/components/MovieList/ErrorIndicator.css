@@ -1,0 +1,96 @@
+.container {
+  background-color: white;
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px 10px rgba(#000, 0.05);
+}
+
+.circle,
+.circle-border {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.circle {
+  z-index: 1;
+  position: relative;
+  background: white;
+  transform: scale(1);
+  animation: success-anim 700ms ease;
+}
+
+.circle-border {
+  z-index: 0;
+  position: absolute;
+  transform: scale(1.1);
+  animation: 160px 1500ms ease;
+  background: red;
+}
+
+@keyframes success-anim {
+  0% {
+    transform: scale(0);
+  }
+
+  30% {
+    transform: scale(0);
+  }
+
+  75% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes circle-anim {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1.4);
+  }
+}
+
+.error::before,
+.error::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: red;
+  position: absolute;
+}
+
+.error::before {
+  width: 50px;
+  top: 50%;
+  left: 34%;
+  transform: rotateZ(50deg);
+}
+
+.error::after {
+  width: 50px;
+  top: 50%;
+  left: 34%;
+  transform: rotateZ(-50deg);
+}
+
+.text-error-message {
+  display: flex;
+  margin: 50px 20px;
+  padding: 0 auto;
+}
+
+.text-error-message span {
+  font-size: large;
+  color: #000;
+  font-weight: bold;
+}

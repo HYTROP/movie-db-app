@@ -1,0 +1,121 @@
+h1.title {
+  margin: 0 0;
+  width: 200px;
+
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.data-of-release {
+  width: 300px;
+  height: 30px;
+  color: rgb(191, 194, 194);
+}
+
+
+
+.img-film {
+  width: 186px;
+  background: no-repeat;
+}
+
+
+
+div .genre {
+  width: min-content;
+  color: rgba(0, 0, 0, 0.65);
+  border-radius: 2px;
+  border: 1px solid #D9D9D9;
+  background: #FAFAFA;
+
+  margin: 0 0 10px 0;
+
+}
+
+.card-box {
+  margin: 0 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.card {
+  display: flex;
+  width: 470px;
+  height: 279px;
+  margin: 0 30px 35px 0;
+}
+
+.card {
+  background-color: rgba(246, 246, 246, 0.56);
+  box-shadow: 0.2px 6px 5px 8px rgba(105, 104, 104, 0.164);
+}
+
+.card-text {
+  position: relative;
+  width: 265px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  /* box-sizing: border-box; */
+}
+
+.card-description {
+  width: 228px;
+  height: 100px;
+}
+
+.vote {
+  position: relative;
+  /* top: 10px; */
+  left: 20px;
+  font-size: 16px;
+  border-radius: 50%;
+  width: 41px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.vote-number {
+  position: relative;
+  top: 5px;
+}
+
+@media (max-width: 768px) {
+  .card-box {
+    padding: 20px 15px;
+    margin: 0 10px;
+    width: 420px;
+  }
+
+  li,
+  .card {
+    display: flex;
+    width: 388px;
+    height: 245px;
+  }
+
+  .card {
+    box-sizing: border-box;
+    margin: 0 0;
+  }
+
+  .card-text {
+    margin: 0 10px;
+  }
+
+  .card-description {
+    position: relative;
+    right: 60px;
+    margin: 10px;
+    width: 350px;
+    height: 82px;
+    font-size: 15px;
+  }
+}

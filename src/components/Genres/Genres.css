@@ -1,0 +1,21 @@
+.genre-tags {
+  width: 290px;
+  flex-wrap: wrap;
+}
+
+.genre-span {
+  border: 1px solid rgba(0, 0, 0, 0.462);
+  border-radius: 2px;
+  margin: 0 2px 0 0;
+  padding: 2px;
+  white-space: nowrap;
+
+  color: rgba(115, 113, 113, 0.811);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+
+
+  font-size: 12px;
+}
