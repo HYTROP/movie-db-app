@@ -63,7 +63,7 @@ export default class Card extends Component {
 
     function shortenDescription(overview, maxLength = 120) {
       if (window.matchMedia("(max-width: 768px)").matches) {
-        maxLength = 140;
+        maxLength = 190;
       }
       if (overview.length <= maxLength) {
         return overview;

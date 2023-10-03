@@ -178,10 +178,16 @@ span {
   }
 
   .tab-content-rate {
-    width: 450px;
-    padding: 20px 15px 20px 30px;
+    width: 100vw;
     margin: 0 auto;
+    overflow-y: hidden;
+    font-family: 'Inter', sans-serif;
+  }
 
+  .tab-content-rate,
+  .card-text {
+    width: 100vw;
+    margin: 0 auto;
     font-family: 'Inter', sans-serif;
   }
 
